@@ -10,7 +10,7 @@ app.get('/', async(request, response) => {
 
     const modelResponse = await ollama.generate({
         model: 'gemma4:12b',
-        prompt: "What is the capital of the Philippines?"
+        prompt: "What is the capital of the Philippines?" 
     });
 
     response.send(modelResponse.response);

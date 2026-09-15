@@ -15,7 +15,7 @@ app.post('/', async (request, response) => {
     const body = request.body;
 
     const streamIterator = await ollama.generate({
-        model: 'llama3.2',
+        model: 'gemma4:12b',
         prompt: body.question,
         stream: true
     });
